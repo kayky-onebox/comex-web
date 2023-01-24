@@ -7,9 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Comex</title>
 </head>
 <body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <a href="#" class="logo"><img src="./assets/svg/logo.svg" alt="Comex logo" class="logo"></a>
+            <ul class="menu__lista menu__lista-disable">
+                <li class="menu__lista-item">Promoções</li>
+                <li class="menu__lista-item">Categorias</li>
+                <li class="menu__lista-item">Buscar</li>
+                <li class="menu__lista-item">Contato</li>
+                <li class="menu__lista-item">Carrinho</li>
+                <li class="menu__lista-item">Entrar</li>
+            </ul>
+            <button id="botao-menu" class="botao-menu"><img src="./assets/svg/menu.svg"></button>
+        </nav>
+        <div class="search-bar">
+            <input type="search" name="" id="" placeholder="Pesquisar..." class="cabecalho__input">
+            <img src="./assets/svg/search.svg" alt="">
+        </div>
+    </header>
     
+    <script src="./js/menu.js"></script>
 </body>
 </html>
