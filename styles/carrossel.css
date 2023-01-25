@@ -100,13 +100,15 @@
     background: var(--cinza-claro);
     border-radius: 100%;
     display: block;
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 17px;
 }
 
 .bolinha-ativa{
-    background: var(--roxo);
+    background: var(--roxo);   
 }
+
+/* adaptação para tablet */
 
 @media screen and (min-width: 768px){
     .container{
@@ -142,4 +144,28 @@
         width: 32px;
         height: 32px;
     }
+}
+
+/* adaptação para desktop */
+
+@media screen and (min-width: 1100px){
+    .titulo__principal{
+        font-size: 48px;
+    }
+
+    .titulo__secundario{
+        margin-top: 16px;
+        font-size: 30px;
+    }
+
+    .seta-baixo{
+        height: 60px;
+        width: 60px;
+    }
+
+    .seta-baixo > img{
+        width: 20px;
+    }
+
+
 }
