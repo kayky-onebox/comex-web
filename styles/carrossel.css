@@ -2,46 +2,27 @@
     background-size: cover;
     height: 180px;
     margin-top: 30px;
+    position: relative;
     text-align: center;
     width: 100%;
-    position: relative;
 }
 
 .img-baner{
+    height: 100%;
     left: 0;
     object-fit: fill;
-    width: 100%;
     position: absolute;
+    width: 100%;
     z-index: -1;
-    height: 100%;
-}
-
-.botoes-baner{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    max-width: 540px;
-}
-
-.botao{
-    background: none;
-    border: none;
-    width: 30px;
-}
-
-.botao > img {
-    width: 15px;
 }
 
 .conteudo-baner{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-weight: 800;
     height: 100%;
+    justify-content: center;
 }
 
 .titulo__principal{
@@ -56,17 +37,35 @@
     line-height: 19px;
 }
 
+.botoes-baner{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 540px;
+    position: absolute;
+    width: 100%;
+}
+
+.botao{
+    background: none;
+    border: none;
+    width: 30px;
+}
+
+.botao > img {
+    width: 15px;
+}
+
 .seta-baixo{
+    align-items: center;
     background: var(--roxo);
     border: none;
     border-radius: 100%;
-    width: 32px;
-    height: 32px;
-    /* text-align: center; */
     display: flex;
-    align-items: center;
+    height: 32px;
     justify-content: center;
     margin-top: 20px;
+    width: 32px;
 }
 
 .seta-baixo > img{
@@ -81,13 +80,12 @@
 }
 
 .seletor-pagina > .container{
-    width: 150px;
-    height: 20px;
     display: flex;
-    justify-content: center;
-    margin-top: 10px !important;
     gap: 8px;
-
+    height: 20px;
+    justify-content: center;
+    margin-top: 10px !important;    
+    width: 150px;
 }
 
 .bolinha{
