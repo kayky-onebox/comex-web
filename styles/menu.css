@@ -77,6 +77,10 @@
     color: #9F9999;
 }
 
+.menu-desktop{
+    display: none;
+}
+
 /* adaptação para tablet */
 @media screen and (min-width: 600px){
     .menu{
