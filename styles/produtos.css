@@ -1,11 +1,14 @@
-.mais-vendidos{
-    align-items: center;
+.mais-vendidos {
     background: var(--branco);
+    margin-top: 3.5rem;
+}
+
+.box-mais-vendidos-card{
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     justify-content: center;
-    margin-top: 3.5rem;
 }
 
 .mais-vendidos__titulo{
@@ -20,6 +23,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 .mais-vendidos__img-estrela{
@@ -76,4 +80,20 @@
     padding: 13px 53px;
     font-weight: 600;
     font-size: 16px;
+}
+
+.desativado{
+    display: none;
+}
+
+/* adaptando para tablets */
+@media screen and (min-width: 768px){
+    .box-mais-vendidos-card{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    .desativado{
+        display: flex;
+    }
+}
