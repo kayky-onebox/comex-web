@@ -1,0 +1,37 @@
+.rodape{
+    background: var(--roxo); 
+    text-align: center;
+    margin-top: 48px;
+    padding: 30px 0;
+}
+
+.rodape__lista{
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+.rodape__box{
+    align-items: center;
+    color: var(--branco);
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 37px;
+}
+
+.lista-esquerda{
+    text-align: right;
+}
+
+.lista-direita{
+    text-align: left;
+}
+
+.box-item{
+    margin-bottom: 8px;
+}
