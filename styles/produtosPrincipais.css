@@ -1,0 +1,79 @@
+.mais-vendidos{
+    align-items: center;
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.mais-vendidos__titulo{
+    color: var(--roxo);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 250px;
+}
+
+.box-mais-vendidos{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mais-vendidos__img-estrela{
+    align-self: baseline;
+    background: url(../assets/svg/estrela.svg) no-repeat center;
+    height: 20px;
+    width: 25px;
+}
+
+.mais-vendidos__card{
+    align-items: center;
+    border: 2px var(--roxo) solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 225px;
+}
+
+.mais-vendidos__card-img{
+    width: 100%;
+}
+
+.nome-produto{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.box-valor-produto{
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.valor-produto-simbolo{
+    background: url(../assets/svg/dolas.svg) no-repeat;
+    height: 20px;
+    width: 30px;
+}
+
+.valor-produto{
+    font-size: 14px;
+}
+
+.botao-produto{
+    background: var(--roxo);
+    border-radius: 5px;
+    border: none;
+    color: var(--branco);
+    padding: 13px 53px;
+    font-weight: 600;
+    font-size: 16px;
+    }
