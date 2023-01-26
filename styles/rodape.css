@@ -58,3 +58,25 @@
     }
 }
 
+/* adaptação para desktop */
+
+@media screen and (min-width: 1100px){
+    .rodape__box{
+        display: none;
+    }
+
+    .esquerda{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo-rodape{
+        width: 120px;
+    }
+
+    .rodape__lista{
+        margin-top: 0;
+    }
+}
