@@ -46,6 +46,10 @@
     font-size: 14px;
 }
 
+.menu__lista-item > a{
+    color: var(--branco);
+}
+
 .botao-menu{
     background: transparent;
     border: none;
@@ -135,6 +139,11 @@
     .cabecalho__lista-item{
         font-size: 20px;
         font-weight: 500;
+    }
+
+    .cabecalho__lista-item > a{
+        color: var(--branco);
+        text-decoration: none;
     }
 
     .input-pesquisa-mobile{
