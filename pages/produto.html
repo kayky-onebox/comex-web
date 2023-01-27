@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +13,11 @@
     <link rel="stylesheet" href="../styles/rodape.css">
     <link rel="stylesheet" href="../styles/modal.css">
     <link rel="stylesheet" href="../styles/botaoCard.css">
-    <script src="https://kit.fontawesome.com/0d76fadde4.js" crossorigin="anonymous"></script>
-    <title>Produtos</title>
+    <link rel="stylesheet" href="../styles/produto.css">
+    <script src="https://kit.fontawesome.com/0d76fadde4.js" crossorigin="anonymous"></script>   
+    <title>Produto X</title>
 </head>
-
 <body>
-    <!-- menu mobile -->
     <header class="cabecalho menu-mobile">
         <nav class="menu">
             <a href="#" class="logo"><img src="../assets/svg/logo.svg" alt="Comex logo" class="logo"></a>
@@ -54,26 +52,27 @@
             </ul>
         </div>
     </header>
-    <main class="mais-vendidos" id="mais-vendidos">
-        <div class="box-mais-vendidos">
-            <h2 class="mais-vendidos__titulo">Produtos</h2>
-        </div>
-        <div class="box-mais-vendidos-card">
-            <div class="mais-vendidos__card">
-                <img src="../assets/placa-mae.png" alt="Placa mãe" class="mais-vendidos__card-img">
-                <div class="mais-vendidos__card-textos">
-                    <h3 class="nome-produto">Placa-mãe</h3>
-                    <div class="box-valor-produto">
-                        <span class="valor-produto-simbolo"></span>
-                        <p class="valor-produto">1,500</p>
+    <main>
+        <div class="container-produto">
+            <img src="../assets/memoria-ram.png" alt="Placa mãe" class="img-produto">
+            <div class="container-produto__descricao">
+                <h1 class="nome--produto">Nome produto</h1>
+                <h3 class="descricao--produto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque doloribus, facilis animi officia laboriosam a ex, suscipit hic odit sequi aperiam tempora, unde reiciendis dolores perferendis labore tempore facere deserunt.</h3>
+                <div class="container-cep">
+                    <div class="campo-cep">
+
+                        <label for="cep">CEP:</label>
+                        <input type="number" placeholder="00000-000" id="cep" class="input-cep" min="0">
                     </div>
-                </div>
-                <div class="botoes-produtos">
-                    <button class="carrinho"><i class="fa-solid fa-cart-plus"></i></button>
-                    <button class="detalhe abre-modal">Descrição</button>
+                    <button class="busca-cep">Pesquisar CEP</button>
                 </div>
             </div>
-    </main>
+        </div>
+        <div class="container-compra">
+            <button class="compra-produto">Comprar</button>
+        </div>
+
+    </main>    
     <footer class="rodape">
         <div class="esquerda">
             <a href="#"><img src="../assets/svg/logo.svg" alt="Logo Comex" class="logo-rodape"></a>
@@ -97,40 +96,5 @@
             </ul>
         </div>
     </footer>
-    <div class="container-modal-desabilitado modal">
-        <div class="box-modal">
-            <div class="container-modal-generico">
-                <header class="cabecalho-modal">
-                    <button class="fecha-modal">X</button>
-                </header>
-                <main class="conteudo-modal">
-                    <h1 class="det-produto t1">Detalhes do produto</h1>
-                    <h1 class=" t2  conteudo-modal-desabilitado">Informações tecnicas</h1>
-                    <section class="detalhes-produto-modal">
-                        <div class="box-produto">
-                            <img src="../assets/placa-mae.png" alt="">
-                            <div class="box-produto-textos">
-                                <p class="det-produto sobre-produto t1">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit fuga cupiditate
-                                    aperiam libero architecto assumenda laudantium ut quo laboriosam modi perferendis
-                                    consequatur, placeat excepturi, nemo non officia asperiores? Enim, voluptatem.
-                                </p>
-                                <ul class="sobre-produto  t2  conteudo-modal-desabilitado lista-modal">
-                                    <li>lorem</li>
-                                    <li>lorem</li>
-                                    <li>lorem</li>
-                                    <li>lorem</li>
-                                </ul>
-                                <button class="detalhe info-tecnica t1">Informações técnicas</button>
-                                <button class="esp-tecnica detalhe t2 conteudo-modal-desabilitado">Especificações</button>
-                            </div>
-                        </div>
-                    </section>
-                </main>
-            </div>
-        </div>
-    </div>
-    <script src="../js/menu.js"></script>
-    <script src="../js/modal.js"></script>
 </body>
 </html>
