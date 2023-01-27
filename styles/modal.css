@@ -66,8 +66,23 @@
 .box-produto{
     align-items: center;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     justify-content: center;
+}
+
+.box-produto-textos{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo-modal-desabilitado{
+    display: none;
+}
+
+.info-tecnica{
+    align-self: center;
 }
 
 @media screen and (max-width: 1100px){
@@ -82,7 +97,12 @@
         height: 80%;
         width: 90%;
     }
-
+    
+    .box-produto-textos{
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .box-produto{
         flex-direction: column;
     }
